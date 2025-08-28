@@ -1,0 +1,31 @@
+{
+  "name": "greia-platform",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "turbo": "^1.10.12",
+    "typescript": "^5.1.6"
+  },
+  "packageManager": "pnpm@8.6.12",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
